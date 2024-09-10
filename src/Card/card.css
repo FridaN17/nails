@@ -1,0 +1,75 @@
+.cardbody{
+    background-color:white ;
+    padding: 0px 50px ;
+}
+.container{
+    padding: 50px 0px ;
+    height: 80%;
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent{
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    perspective: 900px;
+
+}
+.Cocard{
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("https://images.pexels.com/photos/2873671/pexels-photo-2873671.jpeg");
+    background-position: center  ;
+    width:100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.Cocard:hover{
+    background-position: 80% 20%;
+    transform: rotate3d(0.5,1,0,30deg);
+
+}
+.content-box{
+    height: 80%;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 0px 0px 10px 10px ;
+    box-shadow: rgba(0,115,255,0.925)0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px ;
+    transform-style: preserve-3d;
+}
+.card-title{
+    color:blue;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px,0px,20px );
+}
+.card-title:hover{
+    transform: translate3d(0px,0px,50px);
+
+}
+.card-content{
+    padding-top:15px;
+    font-size: 12px;
+    color: blue;
+    transition: all 0.5s ease-in-out ;
+    transform: translate3d(0px,0px,20px);
+}
+.card-content:hover{
+    transform: translate3d(0px,0px,50px);
+}
+
+.parent-card2{
+    filter:hue-rotate(150deg);
+}
+.parent-card3{
+    filter: hue-rotate(300deg);
+}
+.parent-card4{
+    filter:hue-rotate(90deg)
+}

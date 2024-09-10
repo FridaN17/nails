@@ -1,0 +1,48 @@
+.brandnail{
+    margin: 0;
+    background-color: aliceblue;
+}
+.bracontainer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+.scroll{
+    white-space: nowrap;
+    margin: 0 2em;
+}
+.scroll div{
+    display: flex;
+    gap:2em;
+    display: inline-block;
+}
+.scroll .brah{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.RightToLeft{
+    animation: RightToLeft 10s infinite linear;
+}
+@keyframes RightToLeft {
+    from{
+    transform: translateX(0%);
+    }
+    to {
+        transform:translateX(-100%)
+}
+ }
+ .LeftToRight{
+    animation:  LeftToRight 10s infinite linear;
+}
+@keyframes LeftToRight {
+    from{
+    transform: translateX(100%);
+    }
+    to {
+        transform:translateX(-100%)
+}
+ }

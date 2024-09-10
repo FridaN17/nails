@@ -1,0 +1,126 @@
+
+.headingcoll{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+
+}
+.headingcoll h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.headingcoll h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(226, 43, 147);
+}
+.headingcoll p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.Collseason{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding : 40px 0px;
+}
+.collseason-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.containercoll{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+
+}
+.colcard{
+    width: 80px;
+    border-radius: .35rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba( 0,0,0,0.8);
+}
+.colcard > .row{
+    color: aliceblue;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.colcard > .row > .icon{
+background: #223;
+color: aliceblue;
+border-radius: 50%;
+width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 15px;
+}
+.colcard > .row > .descriptioncoll{
+display: flex;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+height: 80px;
+width: 400px;
+opacity: 0;
+transform: translateY(30px);
+transition-delay: .3s;
+transition: all .3s ease;
+}
+.descriptioncoll p{
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+.descriptioncoll h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+
+}
+input:checked + label .description{
+    opacity: 1 !important;
+    transition: translateY(0) !important;
+}
+.colcard[for='c1']{
+    background-image: url('https://glaminati.com/wp-content/uploads/2016/11/tp-perfect-winter-nails-holiday-season-1.jpg');
+}
+.colcard[for='c2']{
+    background-image: url('https://i.pinimg.com/736x/47/51/7e/47517ed7f6076fcbcfbc2bf7d8adc21c.jpg');
+}
+.colcard[for='c3']{
+    background-image: url('https://withhouna.com/wp-content/uploads/2022/12/Spring-Vibes-Only-819x1024.jpg');
+}
+.colcard[for='c4']{
+    background-image: url('https://cdn.shopify.com/s/files/1/0183/4271/files/IMG_6682_480x480.jpg?v=1626992548');
+}

@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Salonail{
+    background-color: #f2f2f2;
+   
+    
+}
+.titlesalon{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+
+}
+.titlesalon.hsalon{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+.titlesalon.hsalon::after{
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(158, 27, 131);
+
+}
+.containersalon{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.aboutsalon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutimg-salon{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+
+}
+.aboutimg-salon img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.abouimg-salon:hover img{
+    transform: scale(1.2);
+}
+
+.aboutcontent-salon{
+    flex: 1;
+}
+.aboutcontent-salon .psalon{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+@media screen  and (max-width:768px){
+    .titlesalon{
+        padding: 0px 20px;
+    }
+    .titlesalon.hsalon{
+        font-size: 36px;
+    }
+    .containersalon{
+        padding: 0px;
+    }
+    .aboutsalon{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .aboutimg-salon{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutcontent-salon.psalon{
+        padding: 0px;
+        font-size: 16px;
+    }
+}

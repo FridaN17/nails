@@ -1,0 +1,39 @@
+.navcontent{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navfilter{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+
+      }
+.navfilter .title{
+    color:#fff;
+    font-size: 67px;
+}
+span{
+    color: rgb(168, 22, 95);
+}
+.Navmenu{
+    list-style: none;
+    display:inline-block;
+}
+.Navmenu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: .4s ease;
+}
+.Navmenu a:hover{
+    color:rgb(168, 22, 95);
+    padding: 8px 20px;
+    border: 2px solid #fff;
+}
